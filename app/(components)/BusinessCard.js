@@ -2,18 +2,10 @@ import Image from "next/image";
 import logo from "../../public/logo.png";
 import ivey from "../../public/ivey.png";
 import qr from "../../public/qr.png";
+import map from "../../public/map.jpg";
 import { FaPhone } from "react-icons/fa6";
 import { TfiEmail, TfiWorld, TfiLocationPin } from "react-icons/tfi";
-import {
-  FaTwitter,
-  FaLinkedin,
-  FaInstagram,
-  FaGithub,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaGlobe,
-} from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 const text = "Building tomorrow's website Today.";
 
@@ -21,7 +13,7 @@ export default function BusinessCard() {
   return (
     <div className="relative min-h-fit bg-gradient-to-br from-blue-300 via-white to-blue-300 flex flex-col items-center justify-center overflow-hidden p-8 md:p-16 rounded-3xl shadow-[10px_20px_40px_rgba(0,0,0,0.8),-2px_-2px_5px_rgba(0,0,0,0.15)]">
       {/* Business Card Container */}
-      <div className="z-10 max-w-7xl w-full bg-gray-100 rounded-3xl shadow-2xl p-10 md:p-14 grid md:grid-cols-2 gap-10 items-center">
+      <div className="z-10 max-w-7xl w-full bg-img rounded-3xl  shadow-2xl p-10 md:p-14 grid md:grid-cols-2 gap-10 items-center">
         {/* Front Side */}
         <div className="text-center space-y-3">
           <Image

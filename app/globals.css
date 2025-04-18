@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+.bg-img {
+  background: linear-gradient(rgba(219, 219, 219, 0.5), rgba(230, 230, 230, 0.651)),
+    url("../public/map.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
