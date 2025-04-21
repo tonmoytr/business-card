@@ -1,11 +1,9 @@
 import Image from "next/image";
-import logo from "../../public/logo.png";
 import ivey from "../../public/ivey.png";
-import qr from "../../public/qr.png";
-import map from "../../public/map.jpg";
 import { FaPhone } from "react-icons/fa6";
 import { TfiEmail, TfiWorld, TfiLocationPin } from "react-icons/tfi";
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import ContactButton from "./ContactButton";
 
 const text = "Building tomorrow's website Today.";
 
@@ -13,7 +11,7 @@ export default function BusinessCard() {
   return (
     <div className="relative min-h-fit bg-gradient-to-br from-blue-300 via-white to-blue-300 flex flex-col items-center justify-center overflow-hidden p-8 md:p-16 rounded-3xl shadow-[10px_20px_40px_rgba(0,0,0,0.8),-2px_-2px_5px_rgba(0,0,0,0.15)]">
       {/* Business Card Container */}
-      <div className="z-10 max-w-7xl w-full bg-img rounded-3xl  shadow-2xl p-10 md:p-14 grid md:grid-cols-2 gap-10 items-center">
+      <div className="z-10 max-w-7xl w-full bg-white rounded-3xl  shadow-2xl p-10 md:p-14 grid md:grid-cols-2 gap-10 items-center">
         {/* Front Side */}
         <div className="text-center space-y-3">
           <Image
@@ -24,22 +22,19 @@ export default function BusinessCard() {
           <h1 className="text-3xl font-bold text-blue-300">IVEY SOLUTIONS</h1>
 
           <div className="mt-4">
-            <Image
-              src={qr}
-              alt="QR"
-              className="w-20 md:w-30 h-20 md:h-30 mx-auto border-8 border-blue-300 rounded-xl"
-            />
+            <ContactButton />
           </div>
         </div>
 
         {/* Back Side */}
         <div className="space-y-6 text-gray-800">
-          <Image src={logo} alt="logo" className="w-full h-10 md:h-20 m-0" />
+          {/* <Image src={logo} alt="logo" className="w-full h-10 md:h-20 m-0" /> */}
+          <h2 className="text-4xl text-blue-300 font-extrabold text-center md:text-left">
+            IVEY SOLUTIONS
+          </h2>
           <hr className="text-gray-300 my-3" />
-          <p className="text-sm text-gray-800">
-            {text}
-            <hr className="text-gray-300 m-0" />
-          </p>
+          <p className="text-sm text-gray-800">{text}</p>
+          <hr className="text-gray-300 m-0" />
 
           <div className="space-y-3">
             <div className="flex items-center gap-3 m-0">
